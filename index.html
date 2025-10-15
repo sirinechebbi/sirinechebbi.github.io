@@ -3,75 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    
+    <title>Portfolio - Chebbi Sirine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header>
-        <h1>Chebbi sirine</h1>
-        <p>Étudiante en TI </p>
-    </header>
-    <nav>
-        <ul>
-            
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#langue">Langues</a></li>
-            <li><a href="#projets">Projets</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-person-circle"></i> Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#langue">Langues</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section id="accueil">
-        <h2>Bienvenue sur mon portfolio</h2>
 
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Je suis une Etudiante en Technologie d'informatique spécialité DSI à Iset Tozeur .
-        Passionné par le développement web et les technologies open-source. </p>
-    </section>
-
-    <section id="competences">
-        <h2>Mes Compétences</h2>
-        <div>
-            <h3>Développement Front-End</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Bootstrap</li>
-            </ul>
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 mb-3">Chebbi Sirine</h1>
+            <p class="lead">Étudiante en Technologie d'Informatique</p>
+            <p class="mb-0"><i class="bi bi-geo-alt-fill"></i> ISET Tozeur - DSI</p>
         </div>
-        <div>
-            <h3>Outils</h3>
-            <ul>
-                <li>Git & GitHub</li>
-                <li>VS Code</li>
-            </ul>
+    </header>
+
+    <section id="accueil" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Bienvenue sur mon portfolio</h2>
+            <p class="lead">Découvrez mes compétences et projets en développement web</p>
         </div>
     </section>
-    <section id="langue">
-        <h2>Langues</h2>
-        <ul>
-            <li>Arabe</li>
-            <li>Français</li>
-            <li>Anglais</li>
-            <li>Allemand</li>
-        </ul>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">À propos de moi</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <p class="lead">Je suis une étudiante en Technologie d'Informatique spécialité DSI à ISET Tozeur.</p>
+                            <p>Passionnée par le développement web et les technologies open-source.</p>
+                            <div class="mt-4">
+                                <p class="mb-2"><i class="bi bi-envelope-fill text-primary"></i> <strong>Email:</strong> chebbisirine59@gmail.com</p>
+                                <p class="mb-2"><i class="bi bi-telephone-fill text-primary"></i> <strong>Téléphone:</strong> +216 51171338</p>
+                                <p class="mb-2"><i class="bi bi-geo-alt-fill text-primary"></i> <strong>Localisation:</strong> Tozeur, Tunisie</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="projets">
-        <h2>Mes Projets</h2>
-        <article>
-            <h3>Projet 1: Site E-commerce</h3>
-            <p>Développement d'une plateforme e-commerce responsive avec panier d'achat.</p>
-        </article>
-        <article>
-            <h3>Projet 2: Portfolio Interactif</h3>
-            <p>Portfolio moderne avec animations et effets visuels.</p>
-        </article>
+
+    <section id="competences" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Mes Compétences</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="h5 mb-0"><i class="bi bi-code-slash"></i> Développement Front-End</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> HTML5
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> CSS
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> JavaScript
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> Bootstrap
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-success text-white">
+                            <h3 class="h5 mb-0"><i class="bi bi-tools"></i> Outils</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> Git & GitHub
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> VS Code
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>&copy; Tous droits réservés.</p>
-        <p>Email: chebbisirine59@gmail.com | Téléphone: +216 51171338</p>
+
+    <section id="langue" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Langues</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            <h3 class="h5 mb-0"><i class="bi bi-translate"></i> Compétences Linguistiques</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-globe text-info me-2"></i> Arabe : Langue maternelle
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-globe text-info me-2"></i> Français : Courant
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-globe text-info me-2"></i> Anglais : Intermédiaire
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-globe text-info me-2"></i> Allemand :débutant
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Mes Projets</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title h5">
+                                <i class="bi bi-cart-fill text-primary"></i> Projet 1: Site E-commerce
+                            </h3>
+                            <p class="card-text">Développement d'une plateforme e-commerce responsive avec panier d'achat.</p>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-info">CSS</span>
+                                <span class="badge bg-warning text-dark">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-eye"></i> Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title h5">
+                                <i class="bi bi-person-badge-fill text-success"></i> Projet 2: Portfolio Interactif
+                            </h3>
+                            <p class="card-text">Portfolio moderne avec animations et effets visuels.</p>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-success">Bootstrap</span>
+                                <span class="badge bg-danger">CSS3</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="#" class="btn btn-outline-success btn-sm">
+                                <i class="bi bi-eye"></i> Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-2">&copy; 2025 Chebbi Sirine. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-2">
+                        <i class="bi bi-envelope-fill"></i> chebbisirine59@gmail.com
+                        <span class="mx-2">|</span>
+                        <i class="bi bi-telephone-fill"></i> +216 51171338
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <a href="https://github.com/sirinechebbi" class="text-white me-3"><i class="bi bi-github fs-4"></i></a>
+                    <a href="https://www.linkedin.com/in/sirine-chebbi-19934b355/" class="text-white me-3"><i class="bi bi-linkedin fs-4"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
